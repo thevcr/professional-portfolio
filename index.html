@@ -12,76 +12,85 @@
             <h1><a href="/">Veronica RC</a></h1>
             <!-- Navigation anchors -->
             <nav>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <section class="hero"></section>
-        <!-- Content section -->
-        <section class="content">
-            <article id="about" class="about">
+        <!-- Content sidebar -->
+        <aside class="content">
+            <div id="about" class="about left-nav">
                 <h2>About</h2>
-                <p>
-                    With 6+ years of experience within the Software as a Service (SaaS) space from customer support to quality assurance, I am looking for opportunities in software development.
-                </p>
-            </article>
-            <article id="projects" class="projects">
+            </div>
+            <div id="projects" class="projects left-nav">
                 <h2>Projects</h2>
-                <p>
-                    A list of my worked on projects, from most recent to oldest.
-                </p>
-            </article>
-            <article id="contact" class="contact">
+            </div>
+            <div id="contact" class="contact left-nav">
                 <h2>Contact</h2>
+            </div>
+        </aside>
+        <!-- About section-->
+        <section class="about-me">
+            <div>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo corporis exercitationem at ut. Commodi sit culpa necessitatibus quod alias, consequuntur odio sint! Culpa minus distinctio in ipsum laborum dolor quidem.
-                </p>
-            </article>
-            <article id="resume" class="resume">
-                <h2>Resume</h2>
-                <p>
-                    Placeholder resume link
-                </p>
-            </article>
-        </section>
-        <!-- Projects section -->
-        <aside class="projects">
-            <div class="horiseon">
-                <h2>Horiseon | Marketing Agency Website</h2>
-                <p>
-                    A marketing agency website focused on XYZ.
+                    <img src="./assets/images/cat1.png" alt="Picture of a cat jumping midair with its paws spread out" />
+                    <br>
+                    Hi, my name is Veronica. With 6+ years of experience within the Software as a Service (SaaS) space from customer support to quality assurance, I am looking for opportunities in software development. This portfolio outlines the projects I have done to prepare me for that role.
                 </p>
             </div>
-            <div class="run-buddy margin-bottom">
+        </section>
+        <!-- Projects section -->
+        <section class="projects">
+            <article class="run-buddy preview">
                 <h2>Run Buddy | Fitness Training Website</h2>
+                <a href="https://thevcr.github.io/run-buddy/"><img src="./assets/images/run-buddy-page-screenshot.png" alt="Image of website with picture of woman tying her shoes" /></a>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam enim non optio quo facilis, quis rerum minima voluptatum quod nesciunt ipsum id, perferendis quaerat. Voluptatem ipsum quo molestias iusto.
                 </p>
-            </div>
-        </aside>
+            </article>
+            <article class="horiseon preview">
+                <h2>Horiseon | Marketing Agency Website</h2>
+                <a href="https://thevcr.github.io/horiseon/"><img src="./assets/images/horiseon-web-screenshot.png" alt="Multiple people around a table discussing"/></a>
+                <p>
+                    A marketing agency website focused on XYZ.
+                </p>
+            </article>
+            <article class="placeholder preview">
+                <h2>Placeholder | Project</h2>
+                <a href="https://thevcr.github.io/"><img src="./assets/images/run-buddy-page-screenshot.png" alt="Image of website with picture of woman tying her shoes" /></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam enim non optio quo facilis, quis rerum minima voluptatum quod nesciunt ipsum id, perferendis quaerat. Voluptatem ipsum quo molestias iusto.
+                </p>
+            </article>
+        </section>
         <!-- Contact section -->
         <section id="reach-out" class="contact">
-            <div class="flex-row">
-                <h2 class="section-title secondary-border">Contact</h2>
+            <h2>Contact</h2>
             </div>
             <div class="contact-info">
-                <div>
-                    <h3>VRC</h3>
-                    <address>
-                        Somewhere, USA <br />
-                        P: 202.555.1234<br/>
-                        E: <a href="test@example.com">test@example.com</a>
-                    </address>
+                <div class="phone">
+                    <p>
+                    <tel>202.555.1234</tel>
+                </p>
+                </div>
+                <div class="email">
+                    <p>
+                        <a href="test@example.com">test@example.com</a>
+                    </p>
+                </div>
+                <div class="github">
+                    <p>
+                        <a href="https://thevcr.github.io/">Github</a>
+                    </p>
                 </div>
             </div>
         </section>
