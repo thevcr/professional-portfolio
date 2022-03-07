@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f8f2f2;
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+/* Styling for Header and Navigation section */
+header {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to bottom right, rgb(172, 246, 197), rgb(30, 152, 163));
+    background-size: cover;
+    background-position: center;
+}
+header h1 {
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Styling for Hero section */
+
