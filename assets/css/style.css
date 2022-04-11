@@ -1,173 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: #f8f2f2;
-    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-}
-
-section {
-    padding: 15px;
-}
-
-h2 {
-    padding-bottom: 10px;
-}
-
 /* Styling for Header and Navigation section */
 header {
-    height: 350px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: linear-gradient(to bottom right, rgb(172, 246, 197), rgb(30, 152, 163));
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to bottom right, rgb(241, 179, 241), rgb(30, 152, 163));
+    font-family: 'Raleway', sans-serif;
 }
-header h1 {
-    font-size: 48px;
+.list-group-item {
+    background-color: transparent;
+    border: none;
 }
-
-header nav {
-    font-size: 25px;
-    margin: 250px auto 0;
+.btn {
+    background-color: rgb(30, 152, 163);
 }
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 5px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-}
-
-/* Styling for the Left Nav section */
-.left-nav {
-    margin-right: 20px;
-    border-right: 5px solid rgb(30, 152, 163);
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
-}
-
-/* Styling for About section */
-.about-me {
-    width: 65%;
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-me img {
-    width: 200px; 
-    height: 215px; 
-    object-fit: cover;
-    object-position: 100% 0;
-}
-
-/* Styling for the Projects section */
-
-.preview {
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 15px;
-    width: 65%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.projects img {
-    width: 300px; 
+.preview img {
     height: 315px; 
     object-fit: cover;
     object-position: 100% 0;
     opacity: .5;
-    border: 5px solid rgb(30, 152, 163);
-    text-align: center;
 }
-
-.run-buddy img {
-    width: 500px; 
-    height: 515px; 
-    object-fit: cover;
-}
-
-.img-text {
-    background-color: rgb(30, 152, 163);
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-}
-
-.projects img:hover {
+.preview img:hover {
     opacity: 1;
 }
-
-/* Styling for Contact section */
-.contact {
-    display: inline-block;
-}
-
-/* Media query for smaller desktop screens and smaller */
-@media screen and (max-width: 980px) {
-    header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-      }
-    
-      header h1 {
-        width: 100%;
-        text-align: center;
-      }
-    
-      header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-      }
-    
-      header nav ul li a {
-        font-size: 20px;
-      }
-    
-      footer h2, footer div {
-        text-align: center;
-        width: 100%;
-      }
-
-      .section {
-        width: 80%;
-      }
-  }
-  
-  /* Media query for tablets and smaller */
-  @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-      } 
-  }
-  
-  /* Media query for mobile phones and smaller */
-  @media screen and (max-width: 575px) {
-      .section {
-        width: 95%;
-      }
-    
-      .intro p {
-        width: 100%;
-      }
-      .contact {
-        text-align: center;
-      }
-  }

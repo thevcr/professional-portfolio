@@ -1,101 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Veronica RC | Professional Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body>
-        <!-- Site header -->
-        <header>
-            <h1><a href="/">Veronica RC</a></h1>
-            <!-- Navigation anchors -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section class="hero"></section>
-        <!-- Content sidebar -->
-        <aside class="content">
-            <div id="about" class="about left-nav">
-                <h2>About</h2>
-            </div>
-            <div id="projects" class="projects left-nav">
-                <h2>Projects</h2>
-            </div>
-            <div id="contact" class="contact left-nav">
-                <h2>Contact</h2>
-            </div>
-        </aside>
-        <!-- About section-->
-        <section class="about-me">
-            <div>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Veronica RC | Professional Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="text-center">
+    <!-- Site header -->
+    <header class="container-fluid" style="height:200px;">
+        <!-- Navigation anchors -->
+        <nav>
+            <ul class="list-group list-group-horizontal list-unstyled align-text-bottom">
+                <li class="list-group-item flex-fill">
+                    <a href="#about" class="text-white">About</a>
+                </li>
+                <li class="list-group-item flex-fill">
+                    <a href="#projects" class="text-white">Projects</a>
+                </li>
+                <li class="list-group-item flex-fill">
+                    <a href="#contact" class="text-white">Contact</a>
+                </li>
+                <li class="list-group-item flex-fill">
+                    <a href="./index.html" class="text-white">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero"></section>
+    <div class="container p-2">
+        <div class="row w-100 d-flex justify-content-center">
+            <!-- About section-->
+            <section class="about-me col-8 col-md-6">
                 <p>
-                    <img src="./assets/images/cat1.png" alt="Picture of a cat jumping midair with its paws spread out" />
+                    <img src="./assets/images/wave-emoji.png" alt="Picture of a single-hand emoji waving"
+                        class="img-fluid p-5" height="330px" width="330px"/> 
                     <br>
-                    Hi, my name is Veronica. With 6+ years of experience within the Software as a Service (SaaS) space from customer support to quality assurance, I am looking for opportunities in software development. This portfolio outlines the projects I have done to prepare me for that role.
+                    Hi, my name is Veronica. With 6+ years of experience within the Software as a Service (SaaS)
+                    space from customer support to quality assurance, I am looking for opportunities in software
+                    development. This portfolio outlines the projects I have done to prepare me for that role.
                 </p>
+            </section>
+        </div>
+    </div>
+    <!-- Projects section -->
+    <!-- Current Project-->
+    <div class="row mx-auto justify-content-center p-2">
+        <section class="projects col-md-6">
+            <article class="weather-by-day preview">
+                <div class="card mb-3">
+                    <a href="https://abel-baker.github.io/weather-by-day/"><img src="./assets/images/weather-by-day.png"
+                            class="card-img-top" alt="Image of website with location and date inputs and a partial map"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Weather By Day</h5>
+                        <p class="card-text">An app that looks up the weather at a certain date in the past within the
+                            range of an available data set.</p>
+                        <a href="https://github.com/abel-baker/weather-by-day" class="btn btn-primary">See Weather by
+                            Day on <i class="fab fa-github"></i></a>
+
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <!-- Previous Projects -->
+    <div class="row mx-auto justify-content-center p-2" style="width: 49rem;">
+        <article class="horiseon preview col-sm-6 px-md-5">
+            <div class="card">
+                <a href="https://thevcr.github.io/horiseon/"><img src="./assets/images/horiseon-web-screenshot.png"
+                        alt="Multiple people around a table discussing" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Horiseon | Marketing Agency Website</h5>
+                    <p class="card-text">A marketing agency website focused on XYZ.</p>
+                    <a href="https://github.com/thevcr/horiseon" class="btn btn-primary">See Horiseon on <i
+                            class="fab fa-github"></i></a>
+                </div>
             </div>
-        </section>
-        <!-- Projects section -->
-        <section class="projects">
-            <article class="run-buddy preview">
-                <h2>Run Buddy | Fitness Training Website</h2>
-                <a href="https://thevcr.github.io/run-buddy/"><img src="./assets/images/run-buddy-page-screenshot.png" alt="Image of website with picture of woman tying her shoes" /></a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam enim non optio quo facilis, quis rerum minima voluptatum quod nesciunt ipsum id, perferendis quaerat. Voluptatem ipsum quo molestias iusto.
-                </p>
-            </article>
-            <article class="horiseon preview">
-                <h2>Horiseon | Marketing Agency Website</h2>
-                <a href="https://thevcr.github.io/horiseon/"><img src="./assets/images/horiseon-web-screenshot.png" alt="Multiple people around a table discussing"/></a>
-                <p>
-                    A marketing agency website focused on XYZ.
-                </p>
-            </article>
-            <article class="placeholder preview">
-                <h2>Placeholder | Project</h2>
-                <a href="https://thevcr.github.io/"><img src="./assets/images/run-buddy-page-screenshot.png" alt="Image of website with picture of woman tying her shoes" /></a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam enim non optio quo facilis, quis rerum minima voluptatum quod nesciunt ipsum id, perferendis quaerat. Voluptatem ipsum quo molestias iusto.
-                </p>
-            </article>
-        </section>
+        </article>
+        <article class="run-buddy preview col-sm-6 px-md-5">
+            <div class="card">
+                <a href="https://thevcr.github.io/run-buddy/"><img src="./assets/images/run-buddy-page-screenshot.png"
+                        alt="Image of website with picture of woman tying her shoes" class="card-img-top"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Run Buddy | Fitness Training Website</h5>
+                    <p class="card-text">A marketing agency website focused on XYZ.</p>
+                    <a href="https://github.com/thevcr/run-buddy" class="btn btn-primary">See Run Buddy on <i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!-- Footer -->
+    <footer id="reach-out">
         <!-- Contact section -->
-        <section id="reach-out" class="contact">
-            <h2>Contact</h2>
-            </div>
+        <div class="contact text-left p-2">
+            <h4>Contact</h4>
             <div class="contact-info">
                 <div class="phone">
-                    <p>
+                    <i class="fa-solid fa-square-phone p-1"></i>
                     <tel>202.555.1234</tel>
-                </p>
                 </div>
                 <div class="email">
-                    <p>
-                        <a href="test@example.com">test@example.com</a>
-                    </p>
+                    <i class="fa-solid fa-square-envelope p-1"></i><a href="test@example.com">test@example.com</a>
                 </div>
                 <div class="github">
-                    <p>
-                        <a href="https://thevcr.github.io/">Github</a>
-                    </p>
+                    <i class="fa-brands fa-github-square p-1"></i><a href="https://github.com/thevcr">Github</a>
                 </div>
             </div>
-        </section>
-        <!-- Footer -->
-        <footer>
-        </footer>
-    </body>
+        </div>
+        </div>
+    </footer>
+</body>
+
 </html>
