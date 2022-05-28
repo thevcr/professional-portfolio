@@ -3,19 +3,24 @@ header {
     background-image: linear-gradient(to bottom right, rgb(241, 179, 241), rgb(30, 152, 163));
     font-family: 'Raleway', sans-serif;
 }
-.list-group-item {
-    background-color: transparent;
-    border: none;
-}
 .btn {
     background-color: rgb(30, 152, 163);
+}
+.btn-primary {
+    border-color: transparent;
 }
 .preview img {
     height: 315px; 
     object-fit: cover;
-    object-position: 100% 0;
     opacity: .5;
 }
 .preview img:hover {
     opacity: 1;
+}
+a:hover {
+    background-color:rgba(241, 179, 241, 0.623);
+}
+.btn:hover {
+    background-color:rgba(30, 152, 163, 0.745);
+    border-color: transparent;
 }

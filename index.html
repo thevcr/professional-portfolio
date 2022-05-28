@@ -19,30 +19,30 @@
 
 <body class="text-center">
     <!-- Site header -->
-    <header class="container-fluid" style="height:200px;">
+    <header class="container-fluid" style="height:150px;">
         <!-- Navigation anchors -->
-        <nav>
-            <ul class="list-group list-group-horizontal list-unstyled align-text-bottom">
-                <li class="list-group-item flex-fill">
-                    <a href="#about" class="text-white">About</a>
+        <nav class="nav-list">
+            <ul class="nav justify-content-around d-flex align-items-end" style="height:140px;">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">About</a>
                 </li>
-                <li class="list-group-item flex-fill">
-                    <a href="#projects" class="text-white">Projects</a>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-decoration-none" href="#projects">Projects</a>
                 </li>
-                <li class="list-group-item flex-fill">
-                    <a href="#contact" class="text-white">Contact</a>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-decoration-none" href="#contact">Contact</a>
                 </li>
-                <li class="list-group-item flex-fill">
-                    <a href="./index.html" class="text-white">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-decoration-none" href="./index.html">Home</a>
                 </li>
-            </ul>
+              </ul>
         </nav>
     </header>
     <section class="hero"></section>
     <div class="container p-2">
         <div class="row w-100 d-flex justify-content-center">
             <!-- About section-->
-            <section class="about-me col-8 col-md-6">
+            <section class="about-me col-8 col-md-6 mb-4" id="about">
                 <p>
                     <img src="./assets/images/wave-emoji.png" alt="Picture of a single-hand emoji waving"
                         class="img-fluid p-5" height="330px" width="330px"/> 
@@ -56,8 +56,8 @@
     </div>
     <!-- Projects section -->
     <!-- Current Project-->
-    <div class="row mx-auto justify-content-center p-2">
-        <section class="projects col-md-6">
+    <div class="row mx-auto justify-content-center">
+        <section class="projects col-md-6" id="projects">
             <article class="weather-by-day preview">
                 <div class="card mb-3">
                     <a href="https://abel-baker.github.io/weather-by-day/"><img src="./assets/images/weather-by-day.png"
@@ -66,47 +66,62 @@
                         <h5 class="card-title">Weather By Day</h5>
                         <p class="card-text">An app that looks up the weather at a certain date in the past within the
                             range of an available data set.</p>
-                        <a href="https://github.com/abel-baker/weather-by-day" class="btn btn-primary">See Weather by
+                        <a href="https://github.com/abel-baker/weather-by-day" class="btn btn-primary btn-sm">See Weather by
                             Day on <i class="fab fa-github"></i></a>
-
                     </div>
                 </div>
             </article>
         </section>
     </div>
     <!-- Previous Projects -->
-    <div class="row mx-auto justify-content-center p-2" style="width: 49rem;">
-        <article class="horiseon preview col-sm-6 px-md-5">
-            <div class="card">
-                <a href="https://thevcr.github.io/horiseon/"><img src="./assets/images/horiseon-web-screenshot.png"
-                        alt="Multiple people around a table discussing" class="card-img-top"></a>
-                <div class="card-body">
-                    <h5 class="card-title">Horiseon | Marketing Agency Website</h5>
-                    <p class="card-text">A marketing agency website focused on XYZ.</p>
-                    <a href="https://github.com/thevcr/horiseon" class="btn btn-primary">See Horiseon on <i
-                            class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </article>
-        <article class="run-buddy preview col-sm-6 px-md-5">
-            <div class="card">
-                <a href="https://thevcr.github.io/run-buddy/"><img src="./assets/images/run-buddy-page-screenshot.png"
-                        alt="Image of website with picture of woman tying her shoes" class="card-img-top"></a>
-                <div class="card-body">
-                    <h5 class="card-title">Run Buddy | Fitness Training Website</h5>
-                    <p class="card-text">A marketing agency website focused on XYZ.</p>
-                    <a href="https://github.com/thevcr/run-buddy" class="btn btn-primary">See Run Buddy on <i
-                            class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </article>
+    <div class="card-deck col-sm-6 mx-auto justify-content-center preview px-1">
+        <div class="card mb-3">
+            <a href="https://thevcr.github.io/code-quiz/"><img src="./assets/images/coding-quiz-screenshot.png" class="card-img-top" alt=""></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Code Quiz</h5>
+            <p class="card-text">A no-thrills timed code quiz with random coding questions.</p>
+            <a href="https://github.com/thevcr/code-quiz" class="btn btn-primary btn-sm mt-auto">Code Quiz on <i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="card mb-3">
+            <a href="https://thevcr.github.io/password-generator/"><img src="./assets/images/password-gen.png" class="card-img-top" alt="Screenshot of website with title 'Password Generator', an input with a generated password, and a button that says 'Generate Password'"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Password Generator</h5>
+            <p class="card-text">This site prompts the user to choose which characters they want in their password.</p>
+            <a href="https://github.com/thevcr/password-generator" class="btn btn-primary btn-sm mt-auto">Password Generator on <i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck col-sm-6 mx-auto justify-content-center preview px-1">
+        <div class="card">
+            <a href="https://thevcr.github.io/horiseon/"><img src="./assets/images/horiseon-web-screenshot.png" class="card-img-top" alt="Multiple people around a table discussing"></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Horiseon</h5>
+            <p class="card-text">A marketing agency website focused on search engine optimization (SEO).</p>
+            <a href="https://github.com/thevcr/horiseon" class="btn btn-primary btn-sm mt-auto">Code Quiz on <i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="card">
+            <a href="https://thevcr.github.io/run-buddy/"><img src="./assets/images/run-buddy-page-screenshot.png" class="card-img-top" alt="..."></a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Run Buddy</h5>
+            <p class="card-text">A fitness training website.</p>
+            <a href="https://github.com/thevcr/run-buddy" class="btn btn-primary btn-sm mt-auto">Run Buddy on <i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Footer -->
     <footer id="reach-out">
         <!-- Contact section -->
-        <div class="contact text-left p-2">
-            <h4>Contact</h4>
-            <div class="contact-info">
+        <div class="contact p-5">
+            <h5>Contact</h5>
+            <div class="contact-info" id="contact">
                 <div class="phone">
                     <i class="fa-solid fa-square-phone p-1"></i>
                     <tel>202.555.1234</tel>
@@ -121,6 +136,7 @@
         </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
