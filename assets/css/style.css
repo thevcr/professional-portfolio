@@ -1,7 +1,7 @@
 /* Styling for Header and Navigation section */
 header {
     background-image: linear-gradient(to bottom right, rgb(241, 179, 241), rgb(30, 152, 163));
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
 }
 .btn {
     background-color: rgb(30, 152, 163);
